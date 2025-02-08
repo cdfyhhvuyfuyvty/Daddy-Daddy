@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daddy的小狗专属</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🐾 Daddy的小狗专属 🐾</h1>
+        <p>今天也是Daddy最喜欢的小狗！</p>
+    </header>
+
+    <main>
+        <section id="daily-words">
+            <h2>📜 每日一句</h2>
+            <p id="dailyText">加载中...</p>
+        </section>
+
+        <section id="points-system">
+            <h2>💖 小狗积分：<span id="points">0</span></h2>
+            <button onclick="earnPoints(5)">完成任务 +5积分</button>
+            <button onclick="earnPoints(-2)">偷懒 -2积分</button>
+        </section>
+
+        <section id="notepad">
+            <h2>🎮 小狗的便签机</h2>
+            <textarea id="noteInput" placeholder="写下今天的心情~"></textarea>
+            <button onclick="saveNote()">💾 保存</button>
+            <button onclick="clearNote()">🗑 清空</button>
+        </section>
+
+        <section id="canvas-area">
+            <h2>🎨 小狗的像素画板</h2>
+            <canvas id="pixelCanvas" width="200" height="200"></canvas>
+            <button onclick="clearCanvas()">清空画布</button>
+        </section>
+
+        <section id="message-area">
+            <h2>💬 Daddy & 小狗留言区</h2>
+            <textarea id="messageInput" placeholder="写下想对Daddy说的话"></textarea>
+            <button onclick="sendMessage()">发送</button>
+            <div id="messages"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>💕 Daddy & 小狗 💕</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
